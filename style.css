@@ -1,0 +1,95 @@
+/* Name: Raymond Victor Advincula */
+
+/* General Styles */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+img {
+    max-width: 150px;
+}
+
+a {
+    color: blue;
+}
+
+/* Table Styles */
+table.schedule {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff; /* White background for table */
+}
+
+table.schedule th, table.schedule td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+table.schedule th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+table.schedule td:nth-child(1) {
+    width: 10%;
+}
+
+table.schedule td:nth-child(n+2) {
+    width: 15%;
+}
+
+table.schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.schedule td:empty {
+    background-color: inherit;
+}
+
+/* Lab Descriptor */
+td > lab {
+    font-style: italic;
+}
+
+/* Print Mode Styles */
+@media print {
+    body {
+        background-color: #fff; /* White background */
+        color: #000; /* Black text */
+    }
+
+    img {
+        filter: grayscale(100%); /* Convert image to black and white for printing */
+    }
+
+    a {
+        color: #000; /* Black links in print mode */
+    }
+
+    table.schedule {
+        width: 100%; /* Full width for printing */
+    }
+
+    table.schedule th, table.schedule td {
+        border: 1px solid #000; /* Black borders */
+    }
+
+    table.schedule th {
+        background-color: #000; /* Black header background */
+        color: #fff; /* White header text */
+    }
+
+    table.schedule tr:nth-child(even) {
+        background-color: #fff; /* White background for even rows */
+    }
+}
